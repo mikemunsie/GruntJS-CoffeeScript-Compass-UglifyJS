@@ -41,42 +41,6 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
-      packageLoginLayout: {
-        files: {
-          "<%= webapp %>js/package-loginLayout.js": [
-            "<%= webapp %>js-ext/foutbgone.js.js",
-            "<%= webapp %>js-ext/json2-min.js",
-            "<%= webapp %>js-ext/jquery.pseudo.js",
-            "<%= webapp %>js/staticContent-analytics.js",
-            "<%= webapp %>js-ext/knockout-2.2.0.js",
-            "<%= webapp %>js-ext/l10n-min.js",
-            "<%= webapp %>js-ext/modal.js",
-            "<%= webapp %>js-ext/jquery.cookie-min.js",
-            "<%= webapp %>js/api.js",
-            "<%= webapp %>js/l10.js",
-            "<%= webapp %>js/helpers.js",
-            "<%= webapp %>js/customBindings.js",
-            "<%= webapp %>js/notifications.js",
-            "<%= webapp %>js/loading.js",
-            "<%= webapp %>js/jsUtils.js",
-            "<%= webapp %>js/passwordValidation.js",
-            "<%= webapp %>js/deleteCookies.js"
-          ]
-        },
-        options: {
-          mangle: false,
-          preserveComments: true
-        },
-      },
-      customBindings: {
-        files: {
-          "<%= webapp %>js/customBindings.js": ["<%= webapp %>js/customBindings/*.js"]
-        },
-        options: {
-          mangle: false,
-          preserveComments: true
-        },
-      },
       allFiles: {
         files: [{
           expand: true,
